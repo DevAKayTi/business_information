@@ -142,53 +142,28 @@ const Home = () => {
       </section>
 
       {/* ─── CTA SECTION ─── */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-slate-50">
+      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-slate-50 to-slate-100">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-            {/* Card Header with blue accent */}
-            <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 sm:px-12 pt-8 sm:pt-12 pb-6">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center text-white text-2xl font-bold">
-                  24
-                </div>
-                <span className="text-white/80 text-sm font-semibold uppercase tracking-wide">Available Now</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white">
+          <div className="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+            {/* Minimal Card Body */}
+            <div className="px-8 sm:px-10 py-12 sm:py-14">
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
                 Emergency Plumbing Service
               </h2>
-            </div>
-
-            {/* Card Body */}
-            <div className="px-8 sm:px-12 py-10 sm:py-12">
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Don't wait for business hours. Our team is on standby 24/7 to handle any plumbing emergency. Call us now for immediate assistance.
+              <p className="text-slate-600 mb-8 text-lg leading-relaxed">
+                Available 24/7. Don't wait — our licensed team responds within the hour for any plumbing emergency.
               </p>
 
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-3">
-                  <span className="text-blue-600 font-bold mt-1">✓</span>
-                  <span className="text-slate-700">Response within the hour for emergency calls</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-blue-600 font-bold mt-1">✓</span>
-                  <span className="text-slate-700">Licensed and insured technicians</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-blue-600 font-bold mt-1">✓</span>
-                  <span className="text-slate-700">Transparent pricing with no hidden fees</span>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="tel:+15551234567"
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-lg transition-colors duration-200 text-lg"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
                 >
                   Call (555) 123-4567
                 </a>
                 <Link
                   to="/contact"
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold px-8 py-4 rounded-lg border border-slate-300 transition-colors duration-200 text-lg"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold px-8 py-3 rounded-lg border border-slate-300 transition-colors duration-200"
                 >
                   Send Message
                 </Link>
