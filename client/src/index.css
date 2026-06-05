@@ -3,6 +3,17 @@
 
 @theme {
   --font-family-sans: 'Inter', system-ui, sans-serif;
+  
+  /* Corporate Professional Color Palette */
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e40af;
+  --color-primary-light: #3b82f6;
+  --color-secondary: #1e293b;
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-600: #4b5563;
+  --color-neutral-900: #111827;
 }
 
 @layer base {
@@ -16,30 +27,31 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
   }
 
   body {
     font-family: var(--font-family-sans);
-    background-color: #0f172a;
-    color: #f1f5f9;
+    background-color: #ffffff;
+    color: #1f2937;
     min-height: 100vh;
   }
 
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #0f172a;
+    background: #f3f4f6;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #334155;
-    border-radius: 9999px;
+    background: #d1d5db;
+    border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #475569;
+    background: #9ca3af;
   }
 }
 
