@@ -9,7 +9,7 @@ const errorHandler = require('./middleware/error.middleware');
 const authRoutes = require('./routes/auth.routes');
 const serviceRoutes = require('./routes/service.routes');
 const contactRoutes = require('./routes/contact.routes');
-
+const companyInfoRoutes = require('./routes/companyInfo.routes');
 // Connect to Database
 connectDB();
 
@@ -28,6 +28,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use('/api/auth', authRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/company-info', companyInfoRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

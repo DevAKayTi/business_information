@@ -5,6 +5,7 @@ import { useState } from 'react';
 const navItems = [
   { to: '/admin/dashboard', icon: '📊', label: 'Dashboard' },
   { to: '/admin/services', icon: '🔧', label: 'Services' },
+  { to: '/admin/company-info', icon: '🏢', label: 'Company Info' },
   { to: '/admin/messages', icon: '✉️', label: 'Messages' },
 ];
 
@@ -22,9 +23,8 @@ const AdminLayout = () => {
     <div className="min-h-screen bg-slate-950 flex">
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-64 bg-slate-900 border-r border-white/5 transform transition-transform duration-300 lg:relative lg:translate-x-0 ${
-          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed inset-y-0 left-0 z-40 w-64 bg-slate-900 border-r border-white/5 transform transition-transform duration-300 lg:relative lg:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         {/* Logo */}
         <div className="p-6 border-b border-white/5">
@@ -46,10 +46,9 @@ const AdminLayout = () => {
               key={to}
               to={to}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
-                  isActive
-                    ? 'bg-cyan-500/15 text-cyan-400 border border-cyan-500/25'
-                    : 'text-slate-400 hover:text-white hover:bg-white/5'
+                `flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${isActive
+                  ? 'bg-cyan-500/15 text-cyan-400 border border-cyan-500/25'
+                  : 'text-slate-400 hover:text-white hover:bg-white/5'
                 }`
               }
             >

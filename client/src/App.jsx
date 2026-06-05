@@ -17,6 +17,7 @@ import AdminLayout from './admin/AdminLayout';
 import Dashboard from './admin/Dashboard';
 import ManageServices from './admin/ManageServices';
 import Messages from './admin/Messages';
+import CompanyInfoAdmin from './admin/CompanyInfo';
 
 // Protected route wrapper
 const ProtectedRoute = ({ children }) => {
@@ -56,6 +57,7 @@ const AppRoutes = () => (
       <Route index element={<Navigate to="/admin/dashboard" replace />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="services" element={<ManageServices />} />
+      <Route path="company-info" element={<CompanyInfoAdmin />} />
       <Route path="messages" element={<Messages />} />
     </Route>
 
